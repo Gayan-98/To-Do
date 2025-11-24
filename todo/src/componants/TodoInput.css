@@ -1,24 +1,55 @@
-.plus-icon{
-    height: 20px;
-    width: 20px;
-}
-.todo-input-wrapper{
-    display: flex;
-    gap: 25px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid white;
+.plus-icon {
+  height: 24px;
+  width: 24px;
 }
 
-.todo-input-wrapper input{
-    background-color: rgb(207, 198, 198);
-    border: 0;
-    padding: 10px;
-    border-radius: 5px;
-    width: 300px;
+.todo-input-wrapper {
+  display: flex;
+  gap: 12px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #f0f0f0;
+  width: 100%;
 }
-.todo-input-wrapper button{
-    background-color: rgb(146, 228, 228);
-    color: rgb(15, 16, 16);
-    border: 10px;
-    border-radius:5px ;
+
+.todo-input-wrapper input {
+  background-color: #f8f9fa;
+  border: 2px solid #e9ecef;
+  padding: 14px 18px;
+  border-radius: 12px;
+  flex: 1;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.todo-input-wrapper input:focus {
+  border-color: #667eea;
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.todo-input-wrapper input::placeholder {
+  color: #adb5bd;
+}
+
+.todo-input-wrapper button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-input-wrapper button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.todo-input-wrapper button:active {
+  transform: translateY(0);
 }

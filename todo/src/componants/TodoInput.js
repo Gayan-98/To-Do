@@ -2,15 +2,16 @@ import { useState } from "react";
 //import Box from "@mui/material/Box";
 //import TextField from "@mui/material/TextField";
 import { PlusIcon } from "@heroicons/react/outline";
-import './TodoInput.css';
+import "./TodoInput.css";
 
 function TodoInput({ todos, setTodos }) {
   const [todo, setTodo] = useState("");
 
   function handleClick() {
+    if (todo.trim() === "") return;
     //id,name, isComplete we need thies 3 data from one todo
     const newTodo = {
-      id: 1,
+      id: Date.now(),
       name: todo,
       isComplete: false,
     };

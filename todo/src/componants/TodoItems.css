@@ -1,38 +1,69 @@
-.todo-item-wrapper{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    align-items: center;
-    background-color: azure;
-    margin-top: 5px;
-    border-radius: 5px;
-    
+.todo-item-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 20px;
+  align-items: center;
+  background-color: #f8f9fa;
+  margin-top: 12px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
 }
 
-.todo-item-text{
-    display: flex;
-    gap: 10p;
+.todo-item-wrapper:hover {
+  background-color: #e9ecef;
+  border-color: #dee2e6;
+  transform: translateX(5px);
 }
 
-.todo-item-button{
-    display: flex;
-    gap: 25p;
-}
-.todo-item-button button{
-    padding: 7px; 
-}
-
-.todo-item-button svg{
-    width: 20px;
-    height: 20px;
+.todo-item-text {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex: 1;
 }
 
-.pencil-button{
-    color: #080909;
-    border: solid rgb(168, 42, 42);
+.todo-index {
+  color: #667eea;
+  font-weight: 700;
+  font-size: 1.1rem;
+  min-width: 30px;
 }
 
-.trash-button{
-    color: rgb(168, 42, 42);
-    border: solid rgb(168, 42, 42);
+.todo-name {
+  color: #333;
+  font-size: 1rem;
+  word-break: break-word;
+}
+
+.todo-item-button {
+  display: flex;
+  gap: 8px;
+}
+
+.todo-item-button button {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-item-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.trash-button {
+  background-color: #fee;
+  color: #dc3545;
+}
+
+.trash-button:hover {
+  background-color: #dc3545;
+  color: white;
+  transform: scale(1.1);
 }

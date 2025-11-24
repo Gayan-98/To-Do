@@ -1,19 +1,33 @@
-.todo-list-cintainer{
-    width: 40%;
-    margin: 0 auto;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color:whitesmoke;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px 5px #888888;
-    
-    min-height: 90vh;
+.todo-list-cintainer {
+  max-width: 600px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  padding: 40px 30px;
+  min-height: 500px;
 }
 
-.todo-items-wrapper{
-    width: 80%;
-    margin: 0 auto;
+.todo-list-cintainer h1 {
+  color: #667eea;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: 700;
 }
 
+.todo-items-wrapper {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.empty-message {
+  text-align: center;
+  color: #999;
+  padding: 40px 20px;
+  font-size: 1.1rem;
+}
