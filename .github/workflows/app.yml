@@ -1,4 +1,4 @@
-name: CI/CD for react Todo 
+name: CI/CD for react Todo
 
 on:
   push:
@@ -29,20 +29,19 @@ jobs:
           npm run build
 
       - name: Upload artifact to enable deployment
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: poduction file
           path: ./todo/build
 
   # Deploy Job
   deploy:
-   
     needs: build
-    
+
     runs-on: ubuntu-latest
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: poduction file
           path: ./todo/build
